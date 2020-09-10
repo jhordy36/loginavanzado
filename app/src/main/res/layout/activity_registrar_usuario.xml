@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Registrar_usuario">
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -25,7 +25,39 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/et_correo"
+            android:id="@+id/regi_nombre"
+            android:inputType="text"
+            android:hint="Nombre"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColorHint="#ccc"
+            android:textColor="#fff"
+            android:background="@drawable/marcotextedit"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/regi_telefono"
+            android:inputType="number"
+            android:hint="Telefono"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColorHint="#ccc"
+            android:textColor="#fff"
+            android:background="@drawable/marcotextedit"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/regi_correo"
             android:inputType="textEmailAddress"
             android:hint="Correo Electronico"
             android:layout_marginBottom="15dp"
@@ -41,10 +73,10 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/et_contraseña"
+            android:id="@+id/regi_contraseña"
+            android:inputType="textVisiblePassword"
             android:hint="Contraseña"
-            android:inputType="textPassword"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="15dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:textColorHint="#ccc"
@@ -54,17 +86,7 @@
             android:paddingRight="10dp"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#fff"
-            android:gravity="end"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="25dp"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="15dp"
-            android:background="@android:color/transparent"
-            android:text="¿Olvidaste tu contraseña?"/>
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -73,7 +95,8 @@
             android:layout_marginRight="20dp"
             android:elevation="5dp"
             android:background="@drawable/boton_fondo_color"
-            android:text="Iniciar sesión"
+            android:text="Crear cuenta"
+            android:id="@+id/crear_cuenta"
             android:textColor="#fff"
             android:textSize="16dp"/>
         <LinearLayout
@@ -87,7 +110,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="¿Aun no tienes cuenta?"
+                android:text="¿Ya tienes una cuenta?"
                 android:textSize="16dp"
                 android:textColor="#fff"
                 />
@@ -97,10 +120,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:background="@android:color/transparent"
-                android:text="CREAR CUENTA"
+                android:text="INICIAR SESION"
                 android:textColor="#fff"
                 android:textStyle="bold"
-                android:id="@+id/ir_crear_cuenta"/>
+                android:id="@+id/ir_inicio_sesion"/>
         </LinearLayout>
 
 
