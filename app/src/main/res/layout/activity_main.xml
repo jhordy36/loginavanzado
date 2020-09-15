@@ -74,6 +74,7 @@
             android:elevation="5dp"
             android:background="@drawable/boton_fondo_color"
             android:text="Iniciar sesión"
+            android:id="@+id/iniciar_sesion"
             android:textColor="#fff"
             android:textSize="16dp"/>
         <LinearLayout
